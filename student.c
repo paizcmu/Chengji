@@ -21,7 +21,7 @@ struct Student {
 
 struct Student students[1000];
 
-char FILEPATH[] = "/Users/paizhu/Downloads/chengji.txt";
+char FILEPATH[] = "/Users/paizhu/Downloads/chengji_back.txt";
 int TimeOutMilliSeconds = 5 * 1000;
 int num = 0;
 
@@ -259,11 +259,10 @@ void averageScoreByGender() {
     int numOfMale = 0;
     int numOfFemale = 0;
     for (int i = 0; i < num; i++) {
-        if (strcmp(students[i].Sex, "Male") || strcmp(students[i].Sex, "男")) {
+        if (strcmp(students[i].Sex, "Male")) {
             totalScoreMale += students[i].average;
             numOfMale++;
-        }
-        if (strcmp(students[i].Sex, "Female") || strcmp(students[i].Sex, "女")) {
+        } else if (strcmp(students[i].Sex, "Female")) {
             totalScoreFeMale += students[i].average;
             numOfFemale++;
         }
