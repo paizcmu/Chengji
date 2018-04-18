@@ -1,9 +1,9 @@
 #include "stdio.h"
 #include<time.h>
 #include<string.h>
-#include <zconf.h>
+#include <stdio.h>
 #include <poll.h>
-
+#include  <unistd.h>
 /*定义学生结构体*/
 
 struct Student {
